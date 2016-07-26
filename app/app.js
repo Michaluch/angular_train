@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('barApp', []);
+angular.module('barApp', ['coctailList']);

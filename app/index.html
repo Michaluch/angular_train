@@ -3,22 +3,34 @@
   <head>
     <meta charset="utf-8">
     <title>Coctail map</title>
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="app.css" />
-    <link rel="stylesheet" href="app.animations.css" />
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link rel="stylesheet" href="bower_components/materialize/dist/css/materialize.css" />
   </head>
   <body>
 
+    <div class="container">
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">Imbiber</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="sass.html">Sass</a></li>
+          </ul>
+        </div>
+      </nav>
 
       <coctail-list></coctail-list>
-
+    </div>
 
     <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/materialize/dist/js/materialize.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-animate/angular-animate.js"></script>
     <script src="bower_components/angular-resource/angular-resource.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="app.js"></script>
-    <script src="coctail-list.component.js"></script>
+    <script src="coctail-list/coctail-list.module.js"></script>
+    <script src="coctail-list/coctail-list.component.js"></script>
   </body>
 </html>
